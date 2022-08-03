@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üyelik Başvurusu</title>
+
+    <style>
+
+        #hobi{
+            resize: none;
+            width: 300px;
+            height: 100px;
+        }
+
+       .hrv{
+         float: right;
+
+       }
+       label{
+        display:inline-block;
+        width: 200px;
+       }
+
+    </style>
+
+
+
+</head>
+<body>
+   <form action="result.html" method="get">
+   
+    <h1 style="text-align: center;">Karaambar Kamyoncular Derneği Üyelik Başvurusu</h1><hr>
+
+    <div>
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend><br>
+        
+                           
+            <label for="fname">İsim</label>
+            <input  type="text" name="isim" id="fnam"><br>
+            <label  for="sname">Soyisim</label>
+            <input  type="text" name="Soyisim" id="snam"><br>
+            <label for="tarih">Doğum Tarihi</label>
+            <input type="date" name="Seçilen_Tarih" id="tarih"><br>
+            <label for="mail">E-mail adresi</label>
+            <input type="email" name="Email_Adresi" id="mail"><br>
+            <label for="phone">Tel.No:</label>
+            <input type="tel" name="Tel_No" id="phone"><br>
+            <label for="sehir">Yaşadığınız Şehir</label>
+            <select name="Sehir">
+                <option value="0">------</option>
+                <option value="1">Adana</option>
+                <option value="2">Adıyaman</option>
+                <option value="3">Afyonkarahisar</option>
+                <option value="4">Ağrı</option>
+                <option value="5">Amasya</option>
+                <option value="6">Ankara</option>
+                <option value="7">Antalya</option>
+                <option value="8">Artvin</option>
+                <option value="9">Aydın</option>
+                <option value="10">Balıkesir</option>
+                <option value="11">Bilecik</option>
+                <option value="12">Bingöl</option>
+                <option value="13">Bitlis</option>
+                <option value="14">Bolu</option>
+                <option value="15">Burdur</option>
+                <option value="16">Bursa</option>
+                <option value="17">Çanakkale</option>
+                <option value="18">Çankırı</option>
+                <option value="19">Çorum</option>
+                <option value="20">Denizli</option>
+                <option value="21">Diyarbakır</option>
+                <option value="22">Edirne</option>
+                <option value="23">Elazığ</option>
+                <option value="24">Erzincan</option>
+                <option value="25">Erzurum</option>
+                <option value="26">Eskişehir</option>
+                <option value="27">Gaziantep</option>
+                <option value="28">Giresun</option>
+                <option value="29">Gümüşhane</option>
+                <option value="30">Hakkâri</option>
+                <option value="31">Hatay</option>
+                <option value="32">Isparta</option>
+                <option value="33">Mersin</option>
+                <option value="34">İstanbul</option>
+                <option value="35">İzmir</option>
+                <option value="36">Kars</option>
+                <option value="37">Kastamonu</option>
+                <option value="38">Kayseri</option>
+                <option value="39">Kırklareli</option>
+                <option value="40">Kırşehir</option>
+                <option value="41">Kocaeli</option>
+                <option value="42">Konya</option>
+                <option value="43">Kütahya</option>
+                <option value="44">Malatya</option>
+                <option value="45">Manisa</option>
+                <option value="46">Kahramanmaraş</option>
+                <option value="47">Mardin</option>
+                <option value="48">Muğla</option>
+                <option value="49">Muş</option>
+                <option value="50">Nevşehir</option>
+                <option value="51">Niğde</option>
+                <option value="52">Ordu</option>
+                <option value="53">Rize</option>
+                <option value="54">Sakarya</option>
+                <option value="55">Samsun</option>
+                <option value="56">Siirt</option>
+                <option value="57">Sinop</option>
+                <option value="58">Sivas</option>
+                <option value="59">Tekirdağ</option>
+                <option value="60">Tokat</option>
+                <option value="61">Trabzon</option>
+                <option value="62">Tunceli</option>
+                <option value="63">Şanlıurfa</option>
+                <option value="64">Uşak</option>
+                <option value="65">Van</option>
+                <option value="66">Yozgat</option>
+                <option value="67">Zonguldak</option>
+                <option value="68">Aksaray</option>
+                <option value="69">Bayburt</option>
+                <option value="70">Karaman</option>
+                <option value="71">Kırıkkale</option>
+                <option value="72">Batman</option>
+                <option value="73">Şırnak</option>
+                <option value="74">Bartın</option>
+                <option value="75">Ardahan</option>
+                <option value="76">Iğdır</option>
+                <option value="77">Yalova</option>
+                <option value="78">Karabük</option>
+                <option value="79">Kilis</option>
+                <option value="80">Osmaniye</option>
+                <option value="81">Düzce</option>
+            </select>
+        </fieldset>
+
+        <div>
+            <fieldset>
+                <legend>Eğitim Bilgileri</legend>
+                    <label for="eğitim">Eğitim Derecesi</label>
+                    <select name="eğitim" id="">
+                        <option value="0">------</option>
+                        <option value="1">İlköğretim</option>
+                        <option value="2">Ortaöğretim</option>
+                        <option value="3">Lise</option>
+                        <option value="4">Önlisans</option>
+                        <option value="5">Lisans</option>
+                        <option value="6">Master</option>
+                    </select><br>
+
+                    <label for="Mezuniyet Yılı">Mezuniyet Tarihi</label>
+                    <input type="date" name="Mezuniyet_yılı" id="Mezuniyet Yılı"><br>
+                    <label for="dosya">Mezuniyet Belgesi</label>
+                    <input type="file" name="Seçilen_dosya" id="dosya"><br>
+                    <p>Sahip Olduğunuz Sürücü Belgelerini İşaretleyin</p>
+           
+            <label for="A2">A2 Sınıfı Sürücü Belgesi</label>
+            <input type="checkbox" name="Ehliyet_Belgesi1" id="A2" value="A2 Sınıfı Sürücü Belgesi"><br>
+            <label for="B">B Sınıfı Sürücü Belgesi</label>
+            <input type="checkbox" name="Ehliyet_Belgesi2" id="B" value="B Sınıfı Sürücü Belgesi"><br>
+             <label for="D">D Sınıfı Sürücü Belgesi</label>
+            <input type="checkbox" name="Ehliyet_Belgesi3" id="D" value="D Sınıfı Sürücü Belgesi"><br>
+            <label for="E">E Sınıfı Sürücü Belgesi</label>
+            <input type="checkbox" name="Ehliyet_Belgesi4" id="E" value="E Sınıfı Sürücü Belgesi">
+            </fieldset>
+        </div>
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <label for="hobi" style=>Hobilerinizi Yazınız</label><br>
+            <textarea  name="Hobileri" id="hobi" placeholder="Resim yapmak,balık tutmak..."></textarea><br>
+
+            <label for="hobi" style=>En Sevdiğiniz Kamyon Arkası Sözleri Yazınız</label><br>
+            <textarea  name="Hobileri" id="hobi" placeholder="İlerde güzel günler göreceğiz demişlerdi. Daha ne kadar gideceğiz?..."></textarea>
+        </div>
+        </fieldset>
+        <fieldset>
+            <label for="name">Kullanıcı Adı:</label>
+            <input type="text" name="isim" id="name">
+            <br>
+            <label for="sifre">Parolanızı giriniz:</label>
+            <input type="password" name="Girilen Parola" id="sifre">
+        </fieldset>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <input type="submit" value="Gönder">
+    <br><br><br>
+    <input type="reset" value="Sıfırla">
+</form>
+    
+
+
+</body>
+</html>
